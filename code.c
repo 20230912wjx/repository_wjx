@@ -1,18 +1,12 @@
 include <stdio.h>
 
-int mian(void)
+int main(void)
 {
 
+	printf("苏沛  是 🐖 哈哈哈");
 
+	printf("code ");
 
-
-	printf("test code\n");
-
-	printf("test code\n");
 	return 0;
 }
-
-
-
-
 
