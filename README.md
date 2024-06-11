@@ -2,7 +2,7 @@
 
 ## 关键字查询：
 
-## xx(python) awesome: 查该标签下的XX （Python）项目\<br>
+xx(python) awesome: 查该标签下的XX （Python）项目\<br>
 xx(python) tutorial: 查询XX （python）资料、书籍、文档\<br>
 XX(socket) sample: 查询对应技术（socket）的代码样本
 
@@ -15,12 +15,12 @@ XX(socket) sample: 查询对应技术（socket）的代码样本
 
 ### commit 提交
 
-## 程序员在整个开发周期，有大量的对代码资源的迭代和修改，都可以通过cmmit的方式进行记录，便于程序员回溯代码，及时这些代码被删除
+程序员在整个开发周期，有大量的对代码资源的迭代和修改，都可以通过cmmit的方式进行记录，便于程序员回溯代码，及时这些代码被删除
 提交便于使用作者观察整个工程的开发流程以及设计流程
 
 ### branch分支
 
-## 在仓库中，可以包含多个分支，分支踩是代码文件的第一存储单位，默认的仓库主分支为master/main
+在仓库中，可以包含多个分支，分支踩是代码文件的第一存储单位，默认的仓库主分支为master/main
 不仅可以管理代码存储，便于多人协作开发
 
 ### 仓库内容
@@ -34,7 +34,7 @@ LICENSE许可证：GPL2.0，3.0.Apahce 2.0,Mit,这些许可证，给使用者最
 
 ### Git软件，分布式版本控制系统
 
-## 仓库管理软件，使用git管理私人代码或者企业代码
+仓库管理软件，使用git管理私人代码或者企业代码
 
 ### 设备认证
 
@@ -53,57 +53,57 @@ git config --global usee.email //注册邮箱
 ssh-keygen -t rsa -C "注册邮箱" #创建本地密文 去对应的目录下查找密文文件
 rsa.pub 复制密文。粘贴到settings->SSH key and GPG -> new ssh key ->粘贴
 
-#### (4、测试关联是否完成)
-## ssh -T git@github.com //ssh远程登录
+#### 4、测试关联是否完成
+ssh -T git@github.com //ssh远程登录
 
-### (2、为目标仓库起别名，定位目标仓库，后续上传)
+### 2、为目标仓库起别名，定位目标仓库，后续上传
 
-## git remote add origin(别名) ssh地址（云端仓库地址）\<br>
+git remote add origin(别名) ssh地址（云端仓库地址）
 git remote remove origin #删除地址别名
 
 ## (本地设备与云端仓库的交互逻辑)
-## git add code.c #添加内容 \<br>
-将缓冲区数据提交到本地仓库 \<br>
-git commit -m "备注信息"   #生成提交记录 \<br>
-git push prigin (云端仓库地址) master #将本地仓库内容推到云端仓库 \<br>
-git status #查看状态 \<br>
-git rm code.c #删除本地文件及仓库中文件 \<br>
+git add code.c #添加内容 
+将缓冲区数据提交到本地仓库 
+git commit -m "备注信息"   #生成提交记录 
+git push prigin (云端仓库地址) master #将本地仓库内容推到云端仓库 
+git status #查看状态 
+git rm code.c #删除本地文件及仓库中文件 
 git restore code.c #复位误删文件
 
-## (代码更新的依赖关系被破坏)
+## 代码更新的依赖关系被破坏
 
-## 本地内容要比云端内容新，完成更新替换，但是如果直接修改云端内容，导致本地内容无法再次提交
+本地内容要比云端内容新，完成更新替换，但是如果直接修改云端内容，导致本地内容无法再次提交
 
-### (先拉取git pull 云端内容与本地内容与本地内容合并操作，而后再次推即可)
+### 先拉取git pull 云端内容与本地内容与本地内容合并操作，而后再次推即可
 
-## git pull --rebase origin master \<br>
-git rebase --abort #忽略新版，此时还不能上传 \<br>
+git pull --rebase origin master 
+git rebase --abort #忽略新版，此时还不能上传 
 git rebase --skip  #忽略旧版，更新本地后可以上传
 git rebase --continue #版本合并，解决冲突后可以直接上
 
-## (下载开源代码)
+## 下载开源代码
 
-## git clone "https 仓库地址" # 下载开源项目 code资源
+git clone "https 仓库地址" # 下载开源项目 code资源
 
-## (分支branch)
+## 分支branch
 
-## 关于分支的相关命令，创建分支、选择分支、合并分支
+关于分支的相关命令，创建分支、选择分支、合并分支
 
-## (markdown语言) 
+## markdown语言 
 
-## markdown，文本修饰语言，用特殊符号修饰正文效果
+markdown，文本修饰语言，用特殊符号修饰正文效果
 
-###(标题修饰符)
+###标题修饰符
 
-## 修饰符与正文之间要有空格
+修饰符与正文之间要有空格
 
-### (正文内容)
+### 正文内容
 
 ## 换行使用/</br/>标签，段落缩进（行首加两个空格就是分段）也可以换行
 
-### (字体效果)
+### 字体效果
 
-## *一段测试字体*  #斜体 * 
+*一段测试字体*  #斜体 * 
    **一段测试文本**   #粗体 ** 
    ***一段测试文本*** #粗斜体***  
    ~~一段测试文本     
