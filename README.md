@@ -1,56 +1,56 @@
-# (GitHub)
+# GitHub
 
-## (关键字查询)：
+## 关键字查询：
 
 ## xx(python) awesome: 查该标签下的XX （Python）项目\<br>
 xx(python) tutorial: 查询XX （python）资料、书籍、文档\<br>
 XX(socket) sample: 查询对应技术（socket）的代码样本
 
-## (Github 三要素)
+## Github 三要素
 
-### (Repository仓库)
+### Repository仓库
 
-## 仓库是github项目管理存储基本单位\<br>
+仓库是github项目管理存储基本单位
 一个仓库中存储一个项目，一个用户可以拥有多个仓库，一般仓库分为public,private
 
-### (commit 提交)
+### commit 提交
 
-## 程序员在整个开发周期，有大量的对代码资源的迭代和修改，都可以通过cmmit的方式进行记录，便于程序员回溯代码，及时这些代码被删除\<br>
+## 程序员在整个开发周期，有大量的对代码资源的迭代和修改，都可以通过cmmit的方式进行记录，便于程序员回溯代码，及时这些代码被删除
 提交便于使用作者观察整个工程的开发流程以及设计流程
 
-### (branch分支)
+### branch分支
 
-## 在仓库中，可以包含多个分支，分支踩是代码文件的第一存储单位，默认的仓库主分支为master/main \<br>
+## 在仓库中，可以包含多个分支，分支踩是代码文件的第一存储单位，默认的仓库主分支为master/main
 不仅可以管理代码存储，便于多人协作开发
 
-### (仓库内容)
+### 仓库内容
 
-## code,资源存储，代码资源，二进制，项目管理脚本，许可证等等\<br>
+code,资源存储，代码资源，二进制，项目管理脚本，许可证等等
 issues ,使用时遇到的bug或者进行提交，等待反馈
 
 README ，使用markdown语言编写，工程自述文件，开发进度，版本更新，使用介绍等等
 
 LICENSE许可证：GPL2.0，3.0.Apahce 2.0,Mit,这些许可证，给使用者最大使用权限以及最少的限制
 
-### (Git软件，分布式版本控制系统)
+### Git软件，分布式版本控制系统
 
 ## 仓库管理软件，使用git管理私人代码或者企业代码
 
-### (设备认证)
+### 设备认证
 
-#### (1、让网站的账户与设备绑定，后续完成代码的管理，上传下载)
+#### 1、让网站的账户与设备绑定，后续完成代码的管理，上传下载
 
-## git init //创建本地仓库，后续对仓库操作都要在仓库位置（master）
+git init //创建本地仓库，后续对仓库操作都要在仓库位置（master）
 
 git config -list //查看git的配置文件
 
-#### (2、修改或者添加config配置项)
+#### 2、修改或者添加config配置项
 
-## git config --global user.name //用户名 \<br>
+git config --global user.name //用户名 
 git config --global usee.email //注册邮箱
 
-#### (3、生成本地设备密文)
-## ssh-keygen -t rsa -C "注册邮箱" #创建本地密文 去对应的目录下查找密文文件\<br>
+#### 3、生成本地设备密文
+ssh-keygen -t rsa -C "注册邮箱" #创建本地密文 去对应的目录下查找密文文件
 rsa.pub 复制密文。粘贴到settings->SSH key and GPG -> new ssh key ->粘贴
 
 #### (4、测试关联是否完成)
